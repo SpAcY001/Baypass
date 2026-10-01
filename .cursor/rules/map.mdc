@@ -1,0 +1,15 @@
+---
+description: MapLibre 6 + Next 16 map conventions and filter syntax
+globs: src/components/**/*.tsx,src/lib/constants.ts,src/lib/geo.ts,src/lib/types.ts
+alwaysApply: false
+---
+
+# Map
+
+MapLibre GL JS 6: `import { Map as MapLibreMap, setWorkerUrl } from "maplibre-gl"` — no default export. `setWorkerUrl("/maplibre/maplibre-gl-worker.mjs")`. Workers are copied to `public/maplibre/` on `postinstall`. Load the map only from a client component (`MapApp`), never `ssr: false` in a Server Component.
+
+Layer filters must be **all-legacy**: `["all", ["==", "mode", "rail"], ["in", "agencyKey", ...]]`. Do not mix `["get", "agencyKey"]` expressions with `in`/`match` — agency toggles will no-op.
+
+Use string properties for filters: `fare` (`covered`|`extra`), `connectedFromSj` (`yes`|`no`). Coerce click properties with `asBool` (`true` / `"true"` / `"yes"`). Extra-fare hit lines need `line-opacity` ~0.01 (zero-opacity lines are not queryable).
+
+Defaults: Bus off; bus `minzoom` 13; Connected from San José on; rings on. Keep those unless the user asks to change them. Verify map UI in the browser, including toggles, not only a screenshot.
