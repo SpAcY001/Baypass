@@ -1,0 +1,12 @@
+---
+description: New-chat handoff and STATUS.md maintenance for this long-running map
+alwaysApply: true
+---
+
+# Handoff
+
+Before implementing, read `docs/STATUS.md`. That file is the source of truth for phase, decisions, and next work. Do not restart from chat transcripts if it is current.
+
+After finishing a phase, a major architectural choice, or a session that is about to run out of context: update `docs/STATUS.md` (current phase, what shipped, decisions, pitfalls, remaining work). Do not start the next phase unless asked.
+
+Never put `FIVE11_API_KEY` or other secrets in git, `AGENTS.md`, `docs/STATUS.md`, or rules.
