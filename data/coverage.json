@@ -1,0 +1,231 @@
+{
+  "version": 3,
+  "agencies": {
+    "vta": {
+      "name": "VTA",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["SC"],
+      "color": "#1C4C8C",
+      "defaultOn": true,
+      "connectHint": "Serves campus and connects at Diridon and Berryessa."
+    },
+    "caltrain": {
+      "name": "Caltrain",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["CT", "1000"],
+      "color": "#C8102E",
+      "defaultOn": true,
+      "connectHint": "Connect at San José Diridon. Runs north toward San Francisco and south toward Gilroy."
+    },
+    "bart": {
+      "name": "BART",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["BA"],
+      "color": "#0099D8",
+      "defaultOn": true,
+      "connectHint": "Connect at Berryessa/North San José."
+    },
+    "ac_transit": {
+      "name": "AC Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["AC"],
+      "color": "#0066B3",
+      "defaultOn": false,
+      "connectHint": "East Bay local and transbay buses."
+    },
+    "samtrans": {
+      "name": "SamTrans",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["SM"],
+      "color": "#005DAA",
+      "defaultOn": false,
+      "connectHint": "San Mateo County buses, connecting with Caltrain and BART."
+    },
+    "sf_muni": {
+      "name": "Muni",
+      "covered": true,
+      "exceptions": ["cable_car"],
+      "gtfsIds": ["SF"],
+      "color": "#E03A3E",
+      "defaultOn": false,
+      "connectHint": "San Francisco buses, Metro, and streetcars. Cable cars are not covered."
+    },
+    "dumbarton": {
+      "name": "Dumbarton Express",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["DE"],
+      "color": "#5C6B73",
+      "defaultOn": false,
+      "connectHint": "Transbay buses across the Dumbarton Bridge."
+    },
+    "county_connection": {
+      "name": "County Connection",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["CC"],
+      "color": "#2E86AB",
+      "defaultOn": false,
+      "connectHint": "Central Contra Costa buses."
+    },
+    "tri_delta": {
+      "name": "Tri Delta Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["3D"],
+      "color": "#3D5A80",
+      "defaultOn": false,
+      "connectHint": "Eastern Contra Costa buses."
+    },
+    "westcat": {
+      "name": "WestCAT",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["WC"],
+      "color": "#4A6FA5",
+      "defaultOn": false,
+      "connectHint": "Western Contra Costa buses."
+    },
+    "wheels": {
+      "name": "Wheels",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["WH"],
+      "color": "#587291",
+      "defaultOn": false,
+      "connectHint": "Livermore–Amador Valley buses."
+    },
+    "union_city": {
+      "name": "Union City Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["UC"],
+      "color": "#6B7C8A",
+      "defaultOn": false,
+      "connectHint": "Union City local buses."
+    },
+    "golden_gate_transit": {
+      "name": "Golden Gate Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["GG"],
+      "color": "#0B6E4F",
+      "defaultOn": false,
+      "connectHint": "North Bay and transbay buses."
+    },
+    "golden_gate_ferry": {
+      "name": "Golden Gate Ferry",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["GF"],
+      "color": "#147A5A",
+      "defaultOn": false,
+      "connectHint": "Ferries from Larkspur, Sausalito, and Tiburon."
+    },
+    "sf_bay_ferry": {
+      "name": "San Francisco Bay Ferry",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["SB"],
+      "color": "#1B4F72",
+      "defaultOn": false,
+      "connectHint": "Oakland, Alameda, Vallejo, Richmond, and San Francisco ferries."
+    },
+    "marin_transit": {
+      "name": "Marin Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["MA"],
+      "color": "#2A9D8F",
+      "defaultOn": false,
+      "connectHint": "Marin County local buses."
+    },
+    "smart": {
+      "name": "SMART",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["SA"],
+      "color": "#0072CE",
+      "defaultOn": false,
+      "connectHint": "Sonoma–Marin commuter rail."
+    },
+    "sonoma_county": {
+      "name": "Sonoma County Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["SO"],
+      "color": "#3A7D44",
+      "defaultOn": false,
+      "connectHint": "Sonoma County buses."
+    },
+    "santa_rosa": {
+      "name": "Santa Rosa CityBus",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["SR"],
+      "color": "#4C8C4A",
+      "defaultOn": false,
+      "connectHint": "Santa Rosa local buses."
+    },
+    "petaluma": {
+      "name": "Petaluma Transit",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["PE"],
+      "color": "#5A8F6A",
+      "defaultOn": false,
+      "connectHint": "Petaluma local buses."
+    },
+    "soltrans": {
+      "name": "SolTrans",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["ST"],
+      "color": "#7B6B4A",
+      "defaultOn": false,
+      "connectHint": "Vallejo and Benicia buses."
+    },
+    "fast": {
+      "name": "FAST",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["FS"],
+      "color": "#8A7348",
+      "defaultOn": false,
+      "connectHint": "Fairfield–Suisun buses."
+    },
+    "city_coach": {
+      "name": "City Coach",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["VC"],
+      "color": "#9A7B4F",
+      "defaultOn": false,
+      "connectHint": "Vacaville local buses."
+    },
+    "vine": {
+      "name": "Vine",
+      "covered": true,
+      "exceptions": [],
+      "gtfsIds": ["VN"],
+      "color": "#6A4C93",
+      "defaultOn": false,
+      "connectHint": "Napa Valley buses."
+    },
+    "highway_17": {
+      "name": "Highway 17 Express",
+      "covered": false,
+      "exceptions": ["highway_17_express"],
+      "gtfsIds": ["CR"],
+      "gtfsUrl": "https://developer.scmetro.org/gtfs.zip",
+      "color": "#D97706",
+      "defaultOn": true,
+      "connectHint": "Additional fare. This bus links Santa Cruz to San José Diridon. BayPass does not cover Highway 17 Express."
+    }
+  }
+}

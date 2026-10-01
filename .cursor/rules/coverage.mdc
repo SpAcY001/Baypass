@@ -1,0 +1,15 @@
+---
+description: BayPass coverage is versioned JSON, never inferred from GTFS fares
+globs: data/coverage.json,scripts/import-gtfs.ts,src/lib/coverage.ts,src/lib/mode.ts
+alwaysApply: false
+---
+
+# Coverage
+
+`data/coverage.json` decides what BayPass covers. The importer joins `gtfsIds` (skip alias `1000`). Optional `gtfsUrl` is used when 511 has no zip (Santa Cruz METRO / Highway 17).
+
+- Covered agency: import routes except `exceptions` (Muni `cable_car` via `isCableCar`).
+- Uncovered agency: import **only** exception routes (`highway_17_express`). Style `fare: "extra"`, dashed amber, not agency color from GTFS.
+- Download per-operator 511 feeds (`operator_id=SC|CT|BA|…`), never regional `RG`. Strip UTF-8 BOM before treating the body as a zip.
+- One longest simplified shape per `route_id`. Hub labels are global (`seenHubs`), not per agency.
+- After coverage or importer changes, run `npm run import:gtfs` and confirm `data/generated/network.geojson` updated.
